@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #c3d0e1;
+  box-shadow: #993366;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 2rem;
+  color: #660033;
+}
+.choice-button {
+  height: 100px;
+  width: 100px;
+  border: none;
+  margin: 10px;
+  background-color: d6cbd3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+}
+.choice-button:active {
+  animation: scale 1s ease-out forwards;
+}
+.choice-image {
+  height: 75px;
+}
+#user-move {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#computer-move {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.score {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.reset {
+  display: block;
+  margin: 3rem auto 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #660033;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.reset:hover {
+  background-color: #993366;
+}
+
+/* Add responsive design */
+@media only screen and (max-width: 600px) {
+  .choice-button {
+    flex-wrap: wrap;
+  }
+
+  .choice-button {
+    margin: 2rem 1rem;
+  }
+
+  .choice-button {
+    margin-top: 1rem;
+  }
+}
